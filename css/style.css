@@ -1,0 +1,106 @@
+*{
+    transition: 0.5s !important;
+}
+
+header ul a{
+    font-size: 20px !important;
+    color: black !important;
+    transition: 0.5s !important;
+}
+
+header ul .active{
+    color: brown !important;
+    font-weight: bold;
+}
+header ul .active::after{
+    content: '';
+    display: block;
+    width: 45px;
+    height: 3px;
+    background: brown;
+}
+
+header ul a::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    background: brown;
+    transition: 0.5s !important;
+}
+header ul a:hover:after{
+    width: 45px;
+}
+
+
+/* footer */
+footer{
+    color: white !important;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: grey;
+}
+
+footer ul a:hover{
+    color: white !;
+}
+
+
+
+/* Homepage --> Banner */
+.carousel{
+    height: 70vh;
+    overflow:hidden ;
+    margin: 50px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px;
+}
+
+.carousel .carousel-item{
+    height: 70vh;
+}
+
+.carousel .carousel-item img{
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.carousel button{
+    width: 60px;
+    height: 60px;
+    background: black;
+    border-radius: 50%;
+    top: 45%;
+    margin: 0 20px;
+}
+
+
+/* Homepage --> Trending */
+#trending .card,
+#products .card{
+    height: 350px;
+}
+#trending .card img,
+#products .card img{
+    height: 60%;
+    object-fit: cover;
+}
+
+#trending .card:hover
+#products .card:hover{
+    transform: translate(0, -4px);
+    box-shadow: 0 0 6px;
+}
+
+/* Cartpage */
+
+::-webkit-scrollbar{
+    display: none !important;
+}
